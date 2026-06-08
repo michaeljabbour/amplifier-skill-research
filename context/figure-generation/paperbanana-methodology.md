@@ -436,7 +436,7 @@ The original PaperBanana paper introduced a benchmark with:
 - **Paper:** https://arxiv.org/abs/2601.23265
 - **Project Website:** https://dwzhu-pku.github.io/PaperBanana/
 - **Research Notes:** (arXiv paper research — external)
-- **Tool Implementation:** @research:modules/tool-paperbanana/
+- **Tool Implementation:** the native `figure-designer` + `figure-critic` agents and `recipes/paperbanana-figure.yaml` (the `tool-paperbanana` module was removed in v0.5.0)
 - **Behavior Bundle:** @research:behaviors/paperbanana.md
 - **Recipe:** @research:recipes/paperbanana-figure.yaml
 
