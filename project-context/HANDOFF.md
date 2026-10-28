@@ -1,5 +1,11 @@
 # Handoff
 
+Last updated: 2026-10-28 — public marketing refinement.
+
+The current task adds a clearer customer introduction, fictional artifact preview, first-use prompt and complete public clone/install instructions. Shared static UI retains canonical method/package bytes and native execution boundaries. See README, capability.json and docs/INSTALL.md. No provider call, real-user store, enrollment or live experiment is part of this change.
+
+Earlier consolidation context (historical):
+
 Last updated: 2026-10-28. Local capability consolidation only.
 
 ## Accomplished
