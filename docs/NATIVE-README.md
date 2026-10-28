@@ -74,7 +74,7 @@ Plus a reproducibility stack (`environment.yml`, `Dockerfile.research`, executio
 
 ## Architecture
 
-![Bundle architecture](bundle.png)
+![Bundle architecture](../bundle.png)
 
 The diagram (`bundle.dot`) shows the pipeline spine, the specialist agents grouped by the stage they serve, and the supporting tools and knowledge. Regenerate the PNG with `dot -Tpng bundle.dot -o bundle.png`.
 
