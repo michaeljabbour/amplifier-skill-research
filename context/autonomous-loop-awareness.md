@@ -2,7 +2,7 @@
 
 When a locked pre-registration declares an `experiment_loop` block, `/execute`
 runs the autonomous experiment loop instead of a single pass. The method lives
-in `skills/conducting-autonomous-experiments/SKILL.md`.
+in `skills/research/references/conducting-autonomous-experiments/METHOD.md`.
 
 ---
 
@@ -48,7 +48,7 @@ Plans without one run `/execute` single-pass, unchanged.
 
 | Resource | Location |
 |---|---|
-| Method (SKILL.md) | `skills/conducting-autonomous-experiments/SKILL.md` |
+| Method (SKILL.md) | `skills/research/references/conducting-autonomous-experiments/METHOD.md` |
 | Engine recipe | `recipes/autonomous-experiment-loop.yaml` |
 | Frozen apparatus fields | `templates/preregistration.yaml` |
 | Ledger schema | `templates/experiment-ledger.yaml` |

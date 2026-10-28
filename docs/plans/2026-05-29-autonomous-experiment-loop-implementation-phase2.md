@@ -580,7 +580,7 @@ Replace it with:
 - **`experiment_loop` ABSENT (default):** `/execute` behaves exactly as today — single-pass, producing `execution-log.yaml` / `evidence-log.yaml` as described below. Observable output is unchanged. This is the backward-compatible path.
 - **`experiment_loop` PRESENT:** `/execute` invokes `recipes/autonomous-experiment-loop.yaml`, passing `prereg_path`, `intervention_surface_file` (the allowlist derived from `experiment_loop.intervention_surface`), `run_command` (from `experiment_loop.measurement_protocol.run_command`), `seeds`, `ledger_path`, and `max_iterations` (from `experiment_loop.stopping_rule`). The loop produces an append-only `ledger.yaml` instead of a single-pass log, and terminates in the promotion gate. `max_iterations: 1` is a degenerate single-iteration loop (it still runs the loop code path and emits `ledger.yaml`) — NOT the legacy single-pass path.
 
-No new mode is added; the loop is reached purely through this dispatch. The apparatus (intervention surface, measurement protocol, stopping rule, seeds, held-out set) is frozen in the hash-locked plan — `/execute` never edits it, and the loop may only mutate files inside `intervention_surface` (enforced by `scripts/experiment-loop/freeze_gate.sh`). See `context/autonomous-loop-awareness.md` and `skills/conducting-autonomous-experiments/SKILL.md`.
+No new mode is added; the loop is reached purely through this dispatch. The apparatus (intervention surface, measurement protocol, stopping rule, seeds, held-out set) is frozen in the hash-locked plan — `/execute` never edits it, and the loop may only mutate files inside `intervention_surface` (enforced by `scripts/experiment-loop/freeze_gate.sh`). See `context/autonomous-loop-awareness.md` and `skills/research/references/conducting-autonomous-experiments/METHOD.md`.
 
 ## Reproducibility requirements
 ```
@@ -613,7 +613,7 @@ Co-Authored-By: Amplifier <240397093+microsoft-amplifier@users.noreply.github.co
 **Files:**
 - Modify: `bundle.md`
 
-> READ `bundle.md` first (134 lines). Three edits: (a) bump `version: 0.8.5` → `0.9.0`; (b) add `experiment-runner` to `agents.include`; (c) declare a skills source so `skills/conducting-autonomous-experiments/SKILL.md` is discoverable. This bundle has no skills source yet — model it on how `tools:` are wired (path-based, pointing at this bundle's own dirs). Skills are consumed via `load_skill` (already in `/execute` and agent tool lists).
+> READ `bundle.md` first (134 lines). Three edits: (a) bump `version: 0.8.5` → `0.9.0`; (b) add `experiment-runner` to `agents.include`; (c) declare a skills source so `skills/research/references/conducting-autonomous-experiments/METHOD.md` is discoverable. This bundle has no skills source yet — model it on how `tools:` are wired (path-based, pointing at this bundle's own dirs). Skills are consumed via `load_skill` (already in `/execute` and agent tool lists).
 
 **Step 1a: Bump the version**
 

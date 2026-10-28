@@ -52,7 +52,7 @@ Five NEW amplifier-native artifacts; no new Python module, no new mode.
 
 | Artifact | Path | Role |
 |----------|------|------|
-| Skill | `skills/conducting-autonomous-experiments/SKILL.md` | The method itself — the real descendant of autoresearch's `program.md`: frozen-apparatus discipline, ledger rules, the promotion gate, the four anti-patterns. |
+| Skill | `skills/research/references/conducting-autonomous-experiments/METHOD.md` | The method itself — the real descendant of autoresearch's `program.md`: frozen-apparatus discipline, ledger rules, the promotion gate, the four anti-patterns. |
 | Recipe | `recipes/autonomous-experiment-loop.yaml` | The engine — a `while`/`break_when` loop (propose → collect → analyze → decide → log); invoked by `/execute` when a locked plan defines an intervention surface + metric. |
 | Agent | `agents/experiment-runner.md` | The scientist-in-the-loop — given the locked plan + ledger, proposes the next intervention with rationale, applies keep/revert after analysis. `model_role: reasoning`. |
 | Template | `templates/experiment-ledger.yaml` | The disciplined descendant of autoresearch's `results.tsv` — the schema for each iteration row. |
@@ -77,7 +77,7 @@ No NEW mode is added; the loop is reached purely through this dispatch.
 
 ### Skills source
 
-`skills/` does not yet exist in this bundle — `conducting-autonomous-experiments` is its first owned skill. Implementation note: `bundle.md` must declare/confirm the skills source so `skills/conducting-autonomous-experiments/SKILL.md` is discoverable (per the tool-skills config pattern).
+`skills/` does not yet exist in this bundle — `conducting-autonomous-experiments` is its first owned skill. Implementation note: `bundle.md` must declare/confirm the skills source so `skills/research/references/conducting-autonomous-experiments/METHOD.md` is discoverable (per the tool-skills config pattern).
 
 ### Boundary discipline
 

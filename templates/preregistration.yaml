@@ -113,7 +113,7 @@ amendments: []   # appended to via /plan --amend, never edited in place
 # Present ONLY when this study runs the autonomous-experiment-loop.
 # If absent, /execute behaves exactly as today (single-pass).
 # See context/autonomous-loop-awareness.md and
-# skills/conducting-autonomous-experiments/SKILL.md for full protocol.
+# skills/research/references/conducting-autonomous-experiments/METHOD.md for full protocol.
 #
 # Discipline: intervention_surface and measurement_protocol MUST be disjoint.
 # The loop may edit the surface, never the measurement protocol.

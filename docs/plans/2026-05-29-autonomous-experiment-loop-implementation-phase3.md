@@ -290,11 +290,11 @@ Co-Authored-By: Amplifier <240397093+microsoft-amplifier@users.noreply.github.co
 
 ---
 
-### Task 12: The method — `skills/conducting-autonomous-experiments/SKILL.md`
+### Task 12: The method — `skills/research/references/conducting-autonomous-experiments/METHOD.md`
 
 **Files:**
 - Create (test): `scripts/experiment-loop/tests/test_skill_method.sh`
-- Create: `skills/conducting-autonomous-experiments/SKILL.md`
+- Create: `skills/research/references/conducting-autonomous-experiments/METHOD.md`
 
 > READ a cached SKILL.md for the exact frontmatter shape: `~/.amplifier/cache/amplifier-bundle-parallax-discovery-*/skills/parallax-methodology/SKILL.md` (frontmatter is `name:` + `description:` between `---` delimiters). The skills SOURCE was declared in `bundle.md` in Phase 2 (Task 7) — this skill is discoverable because of that. (Dependency: if `bundle.md` has no `skills:` source, Phase 2 is incomplete — STOP and finish it.)
 
@@ -303,7 +303,7 @@ Co-Authored-By: Amplifier <240397093+microsoft-amplifier@users.noreply.github.co
 Create `scripts/experiment-loop/tests/test_skill_method.sh` with EXACTLY this content:
 ```bash
 #!/usr/bin/env bash
-# Structural test for skills/conducting-autonomous-experiments/SKILL.md:
+# Structural test for skills/research/references/conducting-autonomous-experiments/METHOD.md:
 #   - file exists
 #   - frontmatter has name: and description:
 #   - Karpathy/autoresearch (MIT) attribution line present
@@ -311,7 +311,7 @@ Create `scripts/experiment-loop/tests/test_skill_method.sh` with EXACTLY this co
 #   - the four anti-patterns are named
 set -uo pipefail
 HERE=$(cd "$(dirname "$0")" && pwd)
-SKILL="$HERE/../../../skills/conducting-autonomous-experiments/SKILL.md"
+SKILL="$HERE/../../../skills/research/references/conducting-autonomous-experiments/METHOD.md"
 test -f "$SKILL" || { echo "FAIL: SKILL.md missing: $SKILL"; exit 1; }
 
 grep -q "^name:" "$SKILL"        || { echo "FAIL: frontmatter missing name:"; exit 1; }
@@ -353,7 +353,7 @@ Run:
 mkdir -p skills/conducting-autonomous-experiments
 ```
 
-Create `skills/conducting-autonomous-experiments/SKILL.md` with EXACTLY this content:
+Create `skills/research/references/conducting-autonomous-experiments/METHOD.md` with EXACTLY this content:
 ```markdown
 ---
 name: conducting-autonomous-experiments
@@ -493,7 +493,7 @@ Expected: prints `PASS: skill_method` and `exit=0`.
 
 Run:
 ```bash
-git add scripts/experiment-loop/tests/test_skill_method.sh skills/conducting-autonomous-experiments/SKILL.md
+git add scripts/experiment-loop/tests/test_skill_method.sh skills/research/references/conducting-autonomous-experiments/METHOD.md
 git commit -m "feat: add conducting-autonomous-experiments SKILL.md (the method) + structural test
 
 🤖 Generated with [Amplifier](https://github.com/microsoft/amplifier)
@@ -555,7 +555,7 @@ When a locked pre-registration declares an `experiment_loop` block, `/execute`
 runs the autonomous experiment loop (`recipes/autonomous-experiment-loop.yaml`)
 instead of a single pass. This note says when to reach for it — and its honest
 limits. The method itself lives in
-`skills/conducting-autonomous-experiments/SKILL.md`.
+`skills/research/references/conducting-autonomous-experiments/METHOD.md`.
 
 ## When to reach for the loop
 
@@ -591,7 +591,7 @@ one run `/execute` exactly as before (single-pass), unchanged.
 
 ## Related
 
-- Method: `skills/conducting-autonomous-experiments/SKILL.md`
+- Method: `skills/research/references/conducting-autonomous-experiments/METHOD.md`
 - Engine: `recipes/autonomous-experiment-loop.yaml` (+ iteration body + gate)
 - Frozen-apparatus fields: `templates/preregistration.yaml` (`experiment_loop`)
 - Ledger schema: `templates/experiment-ledger.yaml`
@@ -1008,7 +1008,7 @@ apparatus, terminating in a held-out promotion gate (confirmatory re-run +
 Benjamini–Hochberg correction + cross-vendor multi-LLM judge panel). The output
 is a defensible FINDING — confirmatory or honest null — not a hill-climb.
 
-New: `skills/conducting-autonomous-experiments/SKILL.md` (the method),
+New: `skills/research/references/conducting-autonomous-experiments/METHOD.md` (the method),
 `recipes/autonomous-experiment-loop.yaml` (+ iteration body + promotion gate),
 `agents/experiment-runner.md` (the scientist-in-the-loop),
 `templates/experiment-ledger.yaml` (append-only ledger),
@@ -1119,7 +1119,7 @@ Expected: empty (all committed). If not empty, stage and commit the remainder wi
 ## Phase 3 Done — Definition of Done
 
 - [ ] `recipes/autonomous-experiment-promotion-gate.yaml` exists, passes `recipes validate`, and matches the context keys + `promotion_result` output the Phase 2 orchestrator passes.
-- [ ] `skills/conducting-autonomous-experiments/SKILL.md` exists with valid frontmatter, the four anti-patterns, the cross-vendor judge panel referencing `cross-vendor-judge.md` + `orchestrated-loop-judge-rubric.md` + `ml-paper-reviewer.md`, and the Karpathy/`autoresearch` (MIT) attribution.
+- [ ] `skills/research/references/conducting-autonomous-experiments/METHOD.md` exists with valid frontmatter, the four anti-patterns, the cross-vendor judge panel referencing `cross-vendor-judge.md` + `orchestrated-loop-judge-rubric.md` + `ml-paper-reviewer.md`, and the Karpathy/`autoresearch` (MIT) attribution.
 - [ ] `context/autonomous-loop-awareness.md` exists; `context/instructions.md` references it.
 - [ ] `tests/fixtures/smoke-experiment/{run.sh,intervention.txt}` exist; `run.sh` is executable and emits `primary_metric: 0.42`.
 - [ ] `recipes/_smoke-autonomous-experiment-loop.yaml` exists and passes `recipes validate`.

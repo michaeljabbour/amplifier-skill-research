@@ -1,0 +1,50 @@
+[
+  {
+    "repo": "amplifier-bundle-research",
+    "commit": "79b64cb33cb7ea123c8004733282bfcc29837f8d",
+    "paths": [
+      "skills/conducting-autonomous-experiments/SKILL.md",
+      "agents/hypothesis-designer.md",
+      "agents/methodologist.md",
+      "agents/statistician.md",
+      "agents/literature-scout.md",
+      "agents/research-paper-architect.md",
+      "agents/research-technical-writer.md",
+      "agents/research-citation-manager.md",
+      "agents/figure-designer.md",
+      "agents/honest-critic.md",
+      "context/orchestrated-loop-judge-rubric.md",
+      "behaviors/cross-vendor-judge.md",
+      "agents/ml-paper-reviewer.md",
+      "modules/"
+    ],
+    "license": "MIT License",
+    "role": "Primary history and engine retained; methods consolidated behind the canonical portable entry."
+  },
+  {
+    "repo": "amplifier-bundle-scientificpaper",
+    "commit": "0ef198d1f416b82abb05a9139c86367f17cba037",
+    "paths": [
+      "LICENSE",
+      "agents/citation-manager.md",
+      "agents/figure-artist.md",
+      "agents/latex-expert.md",
+      "agents/paper-architect.md",
+      "context/conference-formats/acl.md",
+      "context/conference-formats/acm.md",
+      "context/conference-formats/arxiv.md",
+      "context/conference-formats/icml.md",
+      "context/conference-formats/ieee.md",
+      "context/conference-formats/neurips.md",
+      "context/conference-styling-awareness.md",
+      "context/figure-generation-awareness.md",
+      "context/imaging/matplotlib-scientific.md",
+      "context/imaging/tikz-patterns.md",
+      "context/instructions.md",
+      "context/latex-awareness.md",
+      "context/paperbanana-methodology.md"
+    ],
+    "license": "MIT License",
+    "role": "Secondary method/reference consolidation. Original source identity and history retained."
+  }
+]

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
-SKILL="$REPO_ROOT/skills/conducting-autonomous-experiments/SKILL.md"
+SKILL="$REPO_ROOT/skills/research/references/conducting-autonomous-experiments/METHOD.md"
 
 fail() { echo "FAIL: $1"; exit 1; }
 

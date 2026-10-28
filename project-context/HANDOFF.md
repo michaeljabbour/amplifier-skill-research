@@ -1,20 +1,18 @@
 # Handoff
 
-*Last updated: 2026-05-29 — initial scaffold*
+Last updated: 2026-10-28. Local capability consolidation only.
 
 ## Accomplished
 
-- Project coordination files scaffolded by hooks-project-context.
+- Consolidated the original autonomous-experiment method under `skills/research/`, preserving substantive source references and secondary Scientific Paper ancestry.
+- Preserved six native experiment-integrity tools, all templates, scripts, evaluation assets, and source history.
+- Added independent portable install/site/check tools and explicit evidence boundaries. Native tool tests: 174 passed across six isolated suites.
 
-## Blocked / Unresolved
+## Unresolved
 
-- Nothing yet.
+- No paid live experiment, provider comparison, manuscript publication, or outside-user acceptance in this consolidation.
+- Original public repository name/visibility and personal working copy are unchanged.
 
-## Start Here Next Session
+## Start here
 
-- Review PROJECT_CONTEXT.md and update the current phase and active work.
-
-## Non-Obvious Context
-
-- This project uses the project-context coordination system. Keep these files
-  accurate as you work — they are the human-readable memory layer.
+Read `docs/VALIDATION.md`, `docs/MIGRATION.md`, and canonical `skills/research/SKILL.md`. Preserve native engine semantics. Do not interpret packaging or fixture checks as effectiveness.

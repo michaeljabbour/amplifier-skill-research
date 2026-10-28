@@ -1,3 +1,5 @@
+> Preserved source method from `amplifier-bundle-research` at `79b64cb33cb7ea123c8004733282bfcc29837f8d`. Original examples and runtime claims are historical; the canonical entry point defines current scope.
+
 ---
 name: conducting-autonomous-experiments
 description: "The method for running the full empirical lifecycle against a FROZEN measurement apparatus. Use during /execute when a locked pre-registration declares an experiment_loop."
