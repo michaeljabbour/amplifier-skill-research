@@ -2,6 +2,8 @@
 
 Make the answer traceable to the evidence.
 
+Watch the [66-second film](https://michaeljabbour.github.io/amplifier-skill-research/#film): nine crashed runs that vanish from a score, and how the skill keeps them in the count. The example in it is fictional.
+
 A research skill for decisions, experiments and papers. Build a claim-to-source chain, keep contradictions visible and use a study design that can support the conclusion you want to make.
 
 [Explore the site](https://michaeljabbour.github.io/amplifier-skill-research/) · [Read the method](skills/research/SKILL.md) · [Install guide](docs/INSTALL.md)

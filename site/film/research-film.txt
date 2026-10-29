@@ -1,0 +1,10 @@
+Your team tests a new search setting on forty questions.
+Nine runs crash. Poof. They vanish into the hat.
+The rest look great. A friendly judge agrees. Ta-da! Eighteen points better.
+Research turns the house lights on.
+Behind the curtain, all nine crashes are still there. They stay in the count.
+And the friendly judge gets checked against the actual source text.
+Before the next run, you freeze the plan: the questions, the scoring, the stop rule.
+You get the protocol, and an honest answer: no improvement claim yet.
+On screen: Keep the failures in the count.
+Research. Make the answer traceable to the evidence.

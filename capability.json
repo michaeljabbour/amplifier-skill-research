@@ -216,5 +216,12 @@
       "Keep the complete installed folder, references and license together. Identical reinstall is safe; conflicts are refused. A deliberate --replace keeps a dated backup."
     ]
   },
-  "repository_url": "https://github.com/michaeljabbour/amplifier-skill-research"
+  "repository_url": "https://github.com/michaeljabbour/amplifier-skill-research",
+  "film": {
+    "file": "research-film",
+    "seconds": 66,
+    "heading": "Keep the failures in the count.",
+    "blurb": "In 66 seconds, a search setting looks eighteen points better because nine crashed runs vanished into the hat and a friendly judge agreed. Research turns the house lights on: the crashes stay in the count, the judge is checked against the source text, and the plan is frozen before the next run. You get the protocol and an honest answer: no improvement claim yet. Captions are on the player; a transcript is below.",
+    "note": "The experiment, its numbers and the judge are a fictional example. The film shows how the skill behaves; it does not report results."
+  }
 }
