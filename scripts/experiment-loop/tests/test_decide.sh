@@ -13,6 +13,7 @@ BASE=$(git rev-parse HEAD)
 echo "intervention" >> f.txt; git add -A; git commit -qm "intervention"
 
 # Test keep: intervention commit must survive
+bash "$(dirname "$DECIDE")/pin_intervention.sh" >/dev/null || exit 1
 bash "$DECIDE" keep >/dev/null
 if [ "$(git rev-parse HEAD)" = "$BASE" ]; then
     echo "FAIL: keep dropped the commit"
@@ -20,6 +21,7 @@ if [ "$(git rev-parse HEAD)" = "$BASE" ]; then
 fi
 
 # Test revert: HEAD must return to baseline with a clean tree
+bash "$(dirname "$DECIDE")/pin_intervention.sh" >/dev/null || exit 1
 bash "$DECIDE" revert >/dev/null
 if [ "$(git rev-parse HEAD)" != "$BASE" ]; then
     echo "FAIL: revert did not reset to baseline"

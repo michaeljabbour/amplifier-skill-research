@@ -61,6 +61,11 @@ steps:
     command: |
       bash {{scripts_dir}}/freeze_gate.sh "{{intervention_surface_file}}" "HEAD~1 HEAD"
 
+  - id: pin-intervention
+    type: bash
+    command: |
+      bash "{{scripts_dir}}/pin_intervention.sh"
+
   - id: collect-across-seeds
     type: bash
     command: |
@@ -141,7 +146,7 @@ steps:
   - id: apply-decision
     type: bash
     command: |
-      bash {{scripts_dir}}/decide.sh "{{decision.decision}}"
+      bash "{{scripts_dir}}/decide.sh" "{{decision.decision}}"
 
   - id: write-ledger-row
     type: bash

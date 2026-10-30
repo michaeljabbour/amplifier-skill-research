@@ -42,6 +42,7 @@ cat > r1.txt <<'EOF'
   label: exploratory
 EOF
 
+bash "$(dirname "$DECIDE")/pin_intervention.sh" >/dev/null || exit 1
 bash "$DECIDE" keep >/dev/null
 bash "$APPEND" "$LEDGER" r1.txt >/dev/null
 
@@ -61,6 +62,7 @@ cat > r2.txt <<'EOF'
   label: exploratory
 EOF
 
+bash "$(dirname "$DECIDE")/pin_intervention.sh" >/dev/null || exit 1
 bash "$DECIDE" revert >/dev/null
 bash "$APPEND" "$LEDGER" r2.txt >/dev/null
 
@@ -80,6 +82,7 @@ cat > r3.txt <<'EOF'
   label: exploratory
 EOF
 
+bash "$(dirname "$DECIDE")/pin_intervention.sh" >/dev/null || exit 1
 bash "$DECIDE" keep >/dev/null
 bash "$APPEND" "$LEDGER" r3.txt >/dev/null
 

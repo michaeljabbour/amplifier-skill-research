@@ -216,12 +216,95 @@
       "Keep the complete installed folder, references and license together. Identical reinstall is safe; conflicts are refused. A deliberate --replace keeps a dated backup."
     ]
   },
-  "repository_url": "https://github.com/michaeljabbour/amplifier-skill-research",
+  "repository_url": "https://github.com/michaeljabbour/amplifier-capability-research",
+  "name": "amplifier-capability-research",
+  "legacy_names": [
+    "amplifier-skill-research",
+    "research"
+  ],
+  "contract_version": "amplifier-capability/v1",
+  "version": null,
+  "version_basis": "No release version recorded; installer requires a full Git revision pin.",
+  "engine": "LLM",
+  "engine_components": {
+    "caller_method": "LLM"
+  },
+  "surfaces": [
+    "agent-skills",
+    "amplifier-bundle"
+  ],
+  "portable_method": {
+    "name": "research",
+    "path": "skills/research",
+    "include": [
+      "."
+    ],
+    "contract": "Agent Skills directory; caller applies the method; no independent execution loop is installed."
+  },
+  "interfaces": {
+    "portable": {
+      "input": "Caller task and explicitly authorized context",
+      "output": "Build the claim from evidence, keep the limits, and make the work inspectable.",
+      "failure": "Report insufficient evidence, unsupported context or host limitation; never turn discovery into an execution claim."
+    },
+    "native": {
+      "distribution": null,
+      "entrypoints": {},
+      "docs": [
+        "docs/INSTALL.md",
+        "docs/MIGRATION.md",
+        "docs/VALIDATION.md",
+        "docs/NATIVE-README.md",
+        "docs/evaluations/2026-10-28/consolidation.json"
+      ],
+      "status": "Existing declared entrypoints preserved; runtime signatures, service access and installation tests remain separate evidence."
+    },
+    "host_adapters": {
+      "amplifier_bundle": "bundle.md",
+      "grants_autonomy": false
+    }
+  },
+  "permissions": {
+    "installation": {
+      "network": false,
+      "executes_capability_code": false,
+      "writes": [
+        "Selected discovery folders",
+        ".capability-state transaction backups"
+      ],
+      "grants_runtime_permissions": false
+    },
+    "runtime": {
+      "status": "Host/caller authorizes each operation; installation is not a tool allowlist or standing approval.",
+      "declared_boundaries": [
+        "A literature basis is not a measured result of this skill. Model judgments are fallible measurements.",
+        "Optional statistical, audit, resume, provenance, and paper-generation engines retain their native dependencies.",
+        "Do not begin a costly live experiment, generate paid media, or publish a manuscript without existing authorization."
+      ]
+    },
+    "secret_names": {
+      "discovery_requires": [],
+      "native_runtime_inventory": "See native documentation; no credentials are bundled or inferred."
+    }
+  },
+  "dataflow": {
+    "installation": "Read pinned tracked portable source and copy locally with SHA-256 receipts. No source text is transmitted.",
+    "method": "Caller supplies authorized context; existing promise and boundaries govern output.",
+    "native_runtime": "Provider/network/storage flows are owned by native interfaces and host authorization; these files do not enable them."
+  },
+  "source_policy": {
+    "revision": "Explicit full40-character Git commit required at installation; never infer latest.",
+    "repository_rename": "Public identity may change; skill folder, imports, entrypoints, tool IDs and schemas remain stable.",
+    "research": ".research/market remains local and ignored; AGENTS governs refresh."
+  },
   "film": {
     "file": "research-film",
     "seconds": 66,
     "heading": "Keep the failures in the count.",
     "blurb": "In 66 seconds, a search setting looks eighteen points better because nine crashed runs vanished into the hat and a friendly judge agreed. Research turns the house lights on: the crashes stay in the count, the judge is checked against the source text, and the plan is frozen before the next run. You get the protocol and an honest answer: no improvement claim yet. Captions are on the player; a transcript is below.",
     "note": "The experiment, its numbers and the judge are a fictional example. The film shows how the skill behaves; it does not report results."
-  }
+  },
+  "repository_aliases": [
+    "https://github.com/michaeljabbour/amplifier-skill-research"
+  ]
 }

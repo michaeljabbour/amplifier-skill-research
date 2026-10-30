@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-30 — Pin and guard experiment decisions
+
+- Pin the committed intervention before measurements and require the same repository root/HEAD at decision time. Refuse tracked/index dirtiness or untracked content endangered by reset; retain unrelated metric/ledger scratch files. Reset failures return nonzero and never announce a successful revert.
+
+## 2026-10-30 — Available film formats
+
+- Offer only film formats present in the repository. Preserve producer assets and support WebM-only playback/downloads without broken MP4 links; cover WebM-only, MP4-only, both and missing-media cases.
+
 ## 2026-10-29 — Film
 
 - Add a 66-second film to the site, with captions, a transcript, a poster and a 15-second cut. The example in it is fictional, and it reports no results.

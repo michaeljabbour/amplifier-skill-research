@@ -51,6 +51,7 @@ steps:
         decision: keep
         label: exploratory
       EOF
+      bash "$SCRIPTS/pin_intervention.sh"
       bash "$SCRIPTS/decide.sh" keep
       bash "$SCRIPTS/ledger_append.sh" "$LEDGER" r1.txt "ledger: iteration 1"
 
@@ -64,6 +65,7 @@ steps:
         decision: revert
         label: exploratory
       EOF
+      bash "$SCRIPTS/pin_intervention.sh"
       bash "$SCRIPTS/decide.sh" revert
       bash "$SCRIPTS/ledger_append.sh" "$LEDGER" r2.txt "ledger: iteration 2"
 
@@ -77,6 +79,7 @@ steps:
         decision: keep
         label: exploratory
       EOF
+      bash "$SCRIPTS/pin_intervention.sh"
       bash "$SCRIPTS/decide.sh" keep
       bash "$SCRIPTS/ledger_append.sh" "$LEDGER" r3.txt "ledger: iteration 3"
 

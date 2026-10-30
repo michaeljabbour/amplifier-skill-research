@@ -28,6 +28,7 @@ fi
 # Reverted intervention
 echo "tweak" >> src/train.py; git add -A; git commit -qm "intervention"
 printf -- '- iteration: 2\n  decision: revert\n' > row2.txt
+bash "$(dirname "$DECIDE")/pin_intervention.sh" >/dev/null || exit 1
 bash "$DECIDE" revert >/dev/null
 bash "$APPEND" "$LEDGER" row2.txt "ledger: iter 2" >/dev/null
 

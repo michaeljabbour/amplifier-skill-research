@@ -22,3 +22,10 @@ Last updated: 2026-10-28. Local capability consolidation only.
 ## Start here
 
 Read `docs/VALIDATION.md`, `docs/MIGRATION.md`, and canonical `skills/research/SKILL.md`. Preserve native engine semantics. Do not interpret packaging or fixture checks as effectiveness.
+
+
+2026-10-30 — Local experiment decision repair.
+
+Added `scripts/experiment-loop/pin_intervention.sh` immediately after freeze-gate in the iteration recipe. It writes the committed intervention HEAD and repository root atomically into worktree-private Git metadata. `decide.sh keep|revert` consumes this pin, refuses changed HEAD/root, tracked/index dirtiness and untracked files endangered by reset, and propagates a reset failure. Safe untracked metric and ledger row files remain supported. Existing smoke callers now pin explicitly. Tests use fictional temporary Git repositories and injected reset failure; no live experiment/provider call.
+
+Next: preserve the pin-before-measurement caller contract. Do not replace the guarded pinned parent reset with an unguarded HEAD~1. Live account/host/experiment acceptance remains unrun.
